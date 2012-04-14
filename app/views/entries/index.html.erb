@@ -1,0 +1,38 @@
+
+
+<% if admin? %>
+<p class="adminoption"><%= link_to 'New Entry', new_entry_path %></p>
+<% end %>
+
+<% if @entries.empty? %>
+<p>Sorry =( <br /> no news in this category </p>
+<% end %>
+
+<% @entries.each do |entry| %>
+<article>
+<h2><%= link_to entry.title,entry %></h2>
+<p class="category">Category: 
+	<a href="/news/<%= entry.cat_id %>/<%= nombrecat(entry.cat_id)%>">
+	<%= nombrecat(entry.cat_id)%></a>
+</p>
+
+<p>
+<% if entry.mainimg != nil%>
+<% bringmainimg(entry.id) %>
+<a rel="facebox" href="/images/800-<%= @image_file %>"><img src="/images/tn-s-c-150-<%= @image_file %>" title=" @image_title"  width="100" style="float:left;margin:8px 8px 0 0; display:inline;"/></a>
+<% end %>
+<%= entry.description %>
+</p>
+
+
+<% if admin? %>
+<div class="adminoption">
+<%= link_to 'Add + images', image_new_path(entry.id) %>
+<%= link_to 'Edit new', edit_entry_path(entry) %><%= link_to 'Destroy new', entry, confirm: 'Are you sure?', method: :delete %>
+</div>
+<% end %>
+<hr>
+</article> 
+<% end %>
+
+

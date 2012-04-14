@@ -1,0 +1,390 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1334378211.281168:@value{	I"length:EFiÉI"digest;
+F"%7adc8ededd89bd36d70313bcb2bbf8f5I"source;
+FI"É/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+*/
+
+
+
+body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, input, textarea, blockquote {
+	margin: 0; padding: 0; border: 0;
+}
+
+.imglist{float:left; margin:5px; padding:5px; width:80px;}
+.imglist p{margin: 0px; line-height: 15px;}
+.adminoption{float:left; margin: 10px 0; width:100%; overflow: hidden; }
+.adminoption a{float:left; margin: 10px; color:green; }
+
+input, textarea{padding:3px; background:#FFF; border:1px solid #e2e2e2;}
+
+article{width:100%; float: left;}
+hr{width:100%; float: left; margin: 15px 0px;border:none; border-bottom:1px dashed #DDD; background:none; }
+
+body {
+	font-family: 'Helvetica', serif; font-size: 14px;
+	line-height: 24px;
+	color: #666;
+	background:#1D1D1D;
+}
+h1{font-weight:normal;}
+a {
+	color: #4b7ea9; font-style: italic;
+}
+a:hover {
+	color: #FF1493;
+}
+	
+header a, h2 a {
+	color: #666; font-style: normal; text-decoration: none;
+
+}
+
+#container {
+	width: 916px; margin: 0 auto; padding: 18px 22px 0 22px;
+	
+	background: #FFF; overflow: hidden;
+}
+
+
+header {
+	margin: 0 0 28px 0;
+
+	background:#ddd; overflow: hidden;
+	padding: 20px 10px ;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+	
+header .maintitle {
+	float: left; font-size: 36px;
+	font-weight: normal;
+	color: #333;
+}
+	
+header nav {
+	float: right; 
+	padding: 6px 0 0 0;
+}
+
+header nav ul {
+	list-style: none;
+}
+
+header nav li {
+	float: left; font-size: 18px;
+	width: 136px; margin: 0 0 0 20px;
+}
+			
+header nav li{
+	text-align: center;
+	color: #a2a2a2;
+}	
+			
+#content {
+	float: left; width: 526px;
+	margin: 0 98px 0 0;
+}
+
+#content article {
+	margin: 0 0 67px 0;	float: left;	
+}
+#content article h2, h1 {
+	font-size: 30px; margin: 0 0 20px 0;
+	font-weight: normal;
+}
+
+#content p {
+	margin: 0 0 24px 0;
+}
+		
+#content .postinfo {
+	list-style: none; overflow: hidden;
+} 
+#content .postinfo li {
+	float: left; width: 136px; margin: 0 20px 0 0;
+	font-style: italic; color: #a2a2a2;
+}
+		
+#pagination {
+	overflow: hidden; margin: 0 0 120px 0;
+}		
+#pagination ul {
+	list-style: none;
+}
+#pagination li {
+	font-size: 18px;
+}
+#pagination li.older {
+	float: left;
+}
+#pagination li.newer {
+	float: right;
+}
+		
+
+#sidebar {
+	width: 292px; float: left;
+	padding: 4px 0 0 0;
+}
+#sidebar h3 {
+	font-size: 18px; font-weight: normal;
+	margin: 0 0 15px 0;
+	color:#FF1493;
+}		
+	
+#sidebar ul {
+	list-style: none;
+}
+	
+#sidebar section {
+	margin: 0 0 47px 0;
+}
+	
+#sidebar #about a.more {
+	display: block; text-align: right;
+}
+		
+#sidebar #categories {
+	width: 136px; float: left; 
+	margin: 0 20px 47px 0;
+}
+	
+#sidebar #social {
+	width: 136px; float: left; 
+}
+		
+#sidebar #search #searchbar {
+	width: 230px; height: 36px; float: left;
+	border: 1px solid #c7c7c7; padding: 0 45px 0 15px; margin: -8px 0 0 0;
+	background: #e2e2e2; /* Old browsers */
+	background: -moz-linear-gradient(top, #e2e2e2 0%, #ffffff 16%); /* FF3.6+ */
+	background: -webkit-linear-gradient(top, #e2e2e2 0%,#ffffff 16%); /* Chrome10+,Safari5.1+ */
+	font-size: 14px; font-style: italic; color: #a2a2a2;
+}
+
+#sidebar #search #searchsubmit {
+	width: 17px; height: 17px; float: right; margin: -27px 15px 0 0;
+	background: url(images/search-icon.png); text-indent: -9999px;
+}
+		
+#footer-container {
+	background: rgba(0,0,0,0.2); 
+	overflow: hidden;
+}
+
+footer a{
+	text-decoration:none; color:#e2e2e2;
+}
+
+footer {
+	width: 916px; margin: 0 auto; padding: 10px 22px 50px 22px;
+}
+footer #credits {
+	list-style: none; float: left; 
+}			
+footer #credits li {
+	float: left; margin: 0 6px 0 0;
+}
+			
+footer #back-top {
+	float: right; font-size: 12px;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 960px) {
+	#container, footer {
+		width: 758px;
+	}
+	
+	#content {
+		margin: 0 20px 0 0;
+	}
+	
+	header .maintitle{color: red;}
+
+	#sidebar {
+		width: 212px;
+	}
+		#sidebar section {
+			clear: left;
+		}
+		#sidebar #search #searchbar {
+			width: 152px;
+		}
+}
+
+@media screen and (max-width: 758px) {
+	#container, footer, #sidebar {
+		width: 524px;
+	}
+	
+	header .maintitle{color: peru;}
+	header nav {
+		clear: left; float: none; overflow: hidden;
+	}
+		header nav li {
+			width: auto; margin: 0 25px 0 0;
+		}
+	
+	header {
+		margin: 0 0 44px 0;
+	}
+	
+	header .maintitle {
+		margin: 0 0 24px 0;
+	}
+	
+	#sidebar section {
+		float: left; clear: none;
+	}
+		#sidebar #social {
+			margin: 0 20px 47px 0;
+		}
+
+	#sidebar #search #searchbar {
+			width: 464px;
+	}
+}
+
+@media screen and (max-width: 524px) {
+	#container, footer, #sidebar, #content {
+		width: 292px;
+	}
+	
+	header nav {
+		float: left; overflow: hidden; margin: 10px 0;
+	}
+	header nav li {
+		width: 100%; margin: 3px 25px 0 0; float: left; 
+	}
+	header nav  a{
+		width: 100%; text-align:center; text-align:left; float: left; 
+	}
+	#content article h2, h1 {
+		font-size: 24px;
+	}
+	
+	#content .postinfo li {
+		margin: 0 10px 0 0;
+	}
+	
+	#sidebar #social {
+			margin: 0;
+		}
+		
+	#sidebar #search #searchbar {
+		width: 230px;
+	}
+}
+/* line 6, ../../app/assets/stylesheets/scaffolds.css.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 9, ../../app/assets/stylesheets/scaffolds.css.scss */
+#notice {
+  color: green;
+}
+
+/* line 12, ../../app/assets/stylesheets/scaffolds.css.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 17, ../../app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+#facebox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  text-align: left;
+}
+
+
+#facebox .popup{
+  position:relative;
+  border:3px solid rgba(0,0,0,0);
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  -webkit-box-shadow:0 0 18px rgba(0,0,0,0.4);
+  -moz-box-shadow:0 0 18px rgba(0,0,0,0.4);
+  box-shadow:0 0 18px rgba(0,0,0,0.4);
+}
+
+#facebox .content {
+  display:table;
+  width: 370px;
+  padding: 10px;
+  background: #fff;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  border-radius:4px;
+}
+
+#facebox .content > p:first-child{
+  margin-top:0;
+}
+#facebox .content > p:last-child{
+  margin-bottom:0;
+}
+
+#facebox .close{
+  position:absolute;
+  top:5px;
+  right:5px;
+  padding:2px;
+  background:#fff;
+}
+#facebox .close img{
+  opacity:0.3;
+}
+#facebox .close:hover img{
+  opacity:1.0;
+}
+
+#facebox .loading {
+  text-align: center;
+}
+
+#facebox .image {
+  text-align: center;
+}
+
+#facebox img {
+  border: 0;
+  margin: 0;
+}
+
+#facebox_overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height:100%;
+  width:100%;
+}
+
+.facebox_hide {
+  z-index:-100;
+}
+
+.facebox_overlayBG {
+  background-color: #000;
+  z-index: 99;
+}
+;
+FI"_version;
+F"%f0f259416e18f4be7e8b31af432363f8

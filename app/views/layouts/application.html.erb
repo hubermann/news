@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>News</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <script type="text/javascript">
+  jQuery(document).ready(function($) {
+  $('a[rel*=facebox]').facebox()
+})
+  </script>
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+</head>
+<body>
+	<div id="container">
+		<header>
+			<p class="maintitle">News on rails</p>
+			<nav role="navigation">
+			<ul>
+				<li><a href="/">All news</a></li>
+				<% if (admin?)%>
+       			 <li><%= link_to "Categories", cats_path%></li>
+       			 <li><%= link_to "Admin logout", logout_path%></li>
+        	<% end%>
+			</ul>
+			</nav>
+		</header>
+<div id="content" role="mains">
+		
+		
+
+<%= yield %>
+
+</div>
+<aside id="sidebar">
+<section id="about"><h3>About this example</h3>
+<p>A simple system of  news divided into categories and options for add images and select one like main image. <br />
+This include a jquery window modal for view images and obviously a simple css "responsive design" <br />[try this resizing the windows or check in a Ipad o smartphone =) ]</p>
+</section>
+<section id="categories"><h3>Categories</h3>
+<%= render :partial => '/cats/categories'  %>
+</section>
+</aside>
+
+</div>
+<!-- footer -->
+<div id="footer-container">
+	<footer>
+		<ul id="credits">
+			<li><a href="http://www.hubermann.com">Hubermann.com</a> & </li> 
+			<li><a href="http://www.buenosweb.com">BuenosWeb.com</a></li>
+		</ul>
+		<p id="back-top"><a href="#">Back to top</a></p>
+	</footer>
+</div>
+</body>
+</html>

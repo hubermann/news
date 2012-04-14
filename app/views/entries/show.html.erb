@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+
+
+
+<h1><%= @entry.title %></h1>
+
+<p class="category">
+Category: 
+<a href="/news/<%= @entry.cat_id %>/<%= nombrecat(@entry.cat_id)%>"><%= nombrecat(@entry.cat_id)%></a>
+</p>
+
+<p><%= @entry.description %></p>
+
+<% @images = bringimages(@entry.id)%>
+
+
+<% if admin? %>
+<%= form_tag( { :action => 'update_main' } ) %>
+<% @images.each do |img| %>
+<div class="imglist" style="border:1px solid #e2e2e2; float:left;">
+<img src="/images/tn-s-c-150-<%= img.filename %>" title="<%= img.title %>"  width="80"/>
+<% if admin? %>
+<p class="adminoption"><%= link_to 'Delete', img, confirm: 'Are you sure?', method: :delete %></p>
+<p class="adminoption">Set main: <br/><%= radio_button_tag 'setmain', img.id, true	%></p>
+<% end %>
+</div>
+<% end %>
+<%= hidden_field_tag 'entrie_id', @entry.id %>
+
+<%= button_tag "Set main image" %>
+<% else %>
+<% @images.each do |img| %>
+<div class="imglist" style="float:left;">
+<a rel="facebox" href="/images/800-<%= img.filename %>">
+<img src="/images/tn-s-g-150-<%= img.filename %>" title="<%= img.title %>"  width="80"/>
+</a>
+</div>
+<% end %>
+
+<% end %>
+<% if admin? %>
+<%= link_to 'Edit', edit_entry_path(@entry) %> |
+<%= link_to 'Back', entries_path %>
+<% end %>

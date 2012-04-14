@@ -1,0 +1,31 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1334339327.9446242:@value{	I"length:EFi6I"digest;
+F"%dfdb4c5b527d7d79f1aff0b4f520744aI"source;
+FI"6/* line 6, ../../app/assets/stylesheets/scaffolds.css.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 9, ../../app/assets/stylesheets/scaffolds.css.scss */
+#notice {
+  color: green;
+}
+
+/* line 12, ../../app/assets/stylesheets/scaffolds.css.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 17, ../../app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+;
+FI"_version;
+F"%2fab76ab633bf0f208f9eded41e347ab

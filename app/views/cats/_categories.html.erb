@@ -1,0 +1,5 @@
+<% @categories = Cat.all %>
+<li><a href="/news/">All</a></li>
+<% @categories.each do |cat| %>
+	<li><a href="/news/<%= cat.id %>/<%= cat.name %>"><%= cat.name %></a></li>
+<% end %>
